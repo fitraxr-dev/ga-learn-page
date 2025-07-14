@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Perusahaan Kecil - Analytics Demo</title>
+
+    <!-- Google tag (ganti G-XXXXXXX dengan Measurement ID kamu) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXX");
+    </script>
+
+    <!-- CSS Eksternal -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">🚀 MyEnterprise</div>
+        <ul class="nav-links">
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#fitur">Fitur</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Selamat Datang di Website Enterprise Kecil</h1>
+        <p>Kami menyediakan solusi digital modern untuk bisnis Anda.</p>
+        <button
+          onclick="gtag('event', 'klik_tombol', {
+        event_category: 'interaksi',
+        event_label: 'cta_hero'
+      })"
+        >
+          Hubungi Kami
+        </button>
+      </section>
+
+      <section id="fitur" class="fitur">
+        <h2>Fitur Unggulan</h2>
+        <ul>
+          <li>📊 Analisis Kinerja Bisnis</li>
+          <li>🔒 Keamanan Data Tingkat Tinggi</li>
+          <li>⚙️ Integrasi API Cepat</li>
+        </ul>
+      </section>
+
+      <section id="kontak" class="kontak">
+        <h2>Kontak Kami</h2>
+        <p>Email: info@myenterprise.co.id</p>
+        <p>Telepon: 0812-3456-7890</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 MyEnterprise. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
